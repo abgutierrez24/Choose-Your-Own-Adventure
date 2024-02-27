@@ -1,5 +1,9 @@
 # CPTR 142: Project III
 
+# Choose Your Own Adventure
+
+This project is a user-input centered game.
+
 Add information about your project.
 Such as detailed description, known bugs and user operation instructions.
 This is the file a user will first look at when attempting to run your program.
