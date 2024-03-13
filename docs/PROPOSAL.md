@@ -1,30 +1,28 @@
-# CPTR 142 Project III: WWU Information Management
-
-This is an example. Replace the information here with your project proposal.
+# CPTR 142 Project III: Choose Your Own Adventure
 
 ## Problem Definition
 
-The goal for this project is to build an Information System for Walla Walla University.
-This business application will store information about students and faculty in text files to allow for persistent data.
-Our focus will be on the student faculty relationship as it pertains to advising.
-Student and faculty users will have separate views and menu options.
+The goal for this project is to create a game that tells a story depending on the user's input.
+After a excerpt from the story is output for the user to read, it will provide two choices for the user to choose from.
+This leads to the story forking at each choice, creating different endings for the story.
 
 ### Key Features
 
-* Faculty view of students
-* Student view
-* Register for a classes
-* See available classes
-* Calculated GPA
+* User-input centered program
+* Horror-themed story
+* Fantasy-themed story
+* Multiple differing endings for each story
 
 ### Assumptions
+
+User inputs correct input.
 
 The users of the system are good actors. 
 No security (authtentication and permissions) will be implemented for this project.
 
 ## Group Members
 
-* Larry Aamodt
-* Preston Carman
-* Jonathan Duncan
-* James Foster
+* Abraham Gutierrez
+* Elyssa Sumendap
+* Jair Garcia Cristino
+* Jesse Thompson
