@@ -30,6 +30,7 @@ int main(){
         case 'B':
           //call function that starts the fantasy storyline
           cout << name << " decides to ...";
+          fantasy_story();
           break;
         default:
           cout << "that is not a proper input";

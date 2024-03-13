@@ -3,7 +3,7 @@ using namespace std;
 
 void fantasy_story(){
     char choice;
-    cout<< "You are asked to try a new video game at your friend’s house. The game is called something. As soon as you boot the game up, you find yourself inside the game itself. You have no idea how you got there. You cannot find your friend. You find yourself in the armory of a castle. Everyone around you is putting on armor and gathering weapons. Someone taps you on the shoulder and tells you to put on the armor and to get a weapon. “What platoon are you a part of? A or B?” "<< endl;
+    cout<< "You are asked to try a new video game at your friend’s house. The game is called something. As soon as you boot the game up, you find yourself inside the game itself. You have no idea how you got there. You cannot find your friend. You find yourself in the armory of a castle. Everyone around you is putting on armor and gathering weapons. Someone taps you on the shoulder and tells you to put on the armor and to get a weapon. “What platoon are you a part of? 1 or 2?” "<< endl;
     cout << "\t1 - raiding a dragon hoard" << endl;
     cout << "\t2 - finding artifact for great wizard" << endl;
     cout << "Choose '1' or '2'" << endl;
