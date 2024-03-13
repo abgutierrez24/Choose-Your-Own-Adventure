@@ -24,7 +24,7 @@ int main(){
     switch (storyChoice){
         case 'A':
           //call function that starts the horror storyline
-          cout << name << " decides to ...";
+          cout << name << " decides to reply to the text inviting them to go camping. " << name << " and their friend meet up and ";
           scenario1_start();
           break;
         case 'B':
