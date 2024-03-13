@@ -1,6 +1,6 @@
+#include "horror.cpp"
 #include <iostream>
 #include <string>
-
 using namespace std;
 /*
 Two stories. Continual forking style.
@@ -22,6 +22,7 @@ int main(){
         case 'A':
           //call function that starts the horror storyline
           cout << name << " decides to ...";
+          scenario1_start();
           break;
         case 'B':
           //call function that starts the fantasy storyline
