@@ -28,7 +28,7 @@ int main(){
           cout << name << " decides to ...";
           break;
         default:
-          //what would this even be?
+          cout << "that is not a proper input";
           break;
     }
 }
