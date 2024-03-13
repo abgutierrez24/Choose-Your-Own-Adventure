@@ -1,6 +1,9 @@
 #include "horror.cpp"
 #include <iostream>
 #include <string>
+#include "fantasy_story.cpp"
+
+
 using namespace std;
 /*
 Two stories. Continual forking style.
