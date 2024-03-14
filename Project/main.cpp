@@ -18,8 +18,6 @@ int main(){
     << " sees that one friend is inviting them to a night out camping. The other friend is inviting them to play a video game at their friend's house." << endl;
     cout << "\tOption 1: Go camping." << endl;
     cout << "\tOption 2: Play some video games." << endl;
-    
-    do{
       cout << name << ", whose invitation will you accept (1/2)? ";
       cin >> storyChoice;
       cout << endl;
@@ -37,9 +35,7 @@ int main(){
             cout << name << " decides to ...";
             break;
           default:
-            cout << "Please choose again." << endl;
-            break;
+            cout << "Please choose again." << endl; // FIND WAY TO LOOP UNTIL THERE IS VALID INPUT
     }
-  }while(storyChoice != 1 && storyChoice != 2);
-  
+    return 0;
 }
