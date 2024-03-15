@@ -1,3 +1,4 @@
+#include <ios>
 #include <iostream>
 using namespace std;
 void dragon_hoard_intro();
@@ -9,6 +10,9 @@ void negotiate_route1();
 void combat_guardsRoute();
 void negotiate_route2();
 void right_route();
+void boulder_route();
+void monsters_route();
+void traps_route();
 
 
 
@@ -152,8 +156,71 @@ char choice;
     switch(choice){
         case '1':
         cout << "You go to explore the left corridor, hoping it will lead you to the dragon's lair. As you venture deeper into the darkness, the passage narrows, and you find yourself navigating through a labyrinth of twists and turns. Suddenly, you hear a rumbling noise from up ahead. You and your platoon spot a massive boulder blocking the path." << endl;
+        boulder_route();
+        break;
         case '2':
         cout << "Curious about the faint glimmer of light, you choose to explore the right corridor. As you venture deeper into the cavern, the light grows brighter, illuminating your path. Suddenly, you come face to face with a massive dragon guarding its hoard. The beast roars in fury, its eyes gleaming with malice." << endl;
+        break;
+        default:
+        cout << "Invalid input. Please choose again" << endl;
+        right_route();
         
     }
+}
+void boulder_route(){
+    char choice;
+    cout << "\tOption 1: Move the boulder." << endl;
+    cout << "\tOption 2: Find an alternate route." << endl;
+    cout << "Which option do you choose (1/2)? ";
+    cin >> choice;
+    switch(choice){
+        case '1':
+        cout << "You and your platoon muster all your strength and attempt to move the boulder blocking the path. You manage to move the massive rock, clearing the way forward.  However, another challenge seems to appear. Continuing down the corridor, you see a group of fierce looking monsters, blocking the path forward." << endl;
+        monsters_route();
+        break;
+        case '2':
+        cout << "Realizing that the boulder is too heavy to move, you decide to backtrack and search for an alternate route. After exploring several side passages, you eventually find a hidden tunnel that bypasses the obstruction. Following the tunnel, you emerge into the dragon's lair. You quickly fill your bags with as much treasure as they can hold before making your way back to the surface, victorious." << endl;
+        break;
+        default:
+        cout << "Invalid input. Please choose again." << endl;
+        boulder_route();
+    }  
+}
+void monsters_route(){
+    char choice;
+    cout << "\tOption 1: Engage in combat" << endl;
+    cout << "\tOption 2: Use stealth" << endl;
+    cout << "Which option do you choose (1/2)? ";
+    cin >> choice;
+    switch(choice){
+        case '1':
+        cout << "You and your platoon draw your weapons and prepare to face the monsters head-on. A fierce battle ensues, with swords clashing and spells flying. Unfortunately, you were defeated as a lot of men were tired from moving the boulder." << endl;
+        break;
+        case '2':
+        cout << "You signal to your platoon to remain silent as you carefully navigate around the monsters, using the shadows to conceal your movements. You and your platoon manage to bypass the monsters undetected, silently slipping past them and continuing down the corridor. As you move forward, you encounter a series of traps set to deter intruders." << endl;
+        traps_route();
+        break;
+        default:
+        cout << "Invalid input. Please choose again." << endl;
+        monsters_route();
+    }
+}
+void traps_route(){
+    char choice;
+    cout << "\tOption 1: Disarm the traps" << endl;
+    cout << "\tOption 2: Find a way to bypass them" << endl;
+    cout << "Which option do you choose (1/2)? ";
+    cin >> choice;
+    switch(choice){
+        case '1':
+        cout << "Recognizing the danger posed by the traps, you and your platoon carefully disarm them one by one. With patience and caution, you successfully neutralize the traps, clearing the way forward. Pressing onward, you finally reach the dragon's lair. Inside, you discover a vast hoard of treasure, gleaming in the dim light. Success! You gather as much treasure as you can carry and make your way back to the surface, triumphant." << endl;
+        break;
+        case '2':
+        cout << "Instead of risking direct confrontation with the traps, you and your platoon find an alternate route to bypass them. You navigate through hidden passageways and secret tunnels, avoiding the traps altogether. However, soon you find yourselves hopelessly lost in the maze of passages. It results in you and your platoon failing the mission. " << endl;
+        break;
+        default:
+        cout << "Invalid input. Please choose again." << endl;
+        traps_route();       
+    }
+
 }
