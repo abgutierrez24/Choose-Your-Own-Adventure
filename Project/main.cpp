@@ -33,6 +33,7 @@ int main(){
           case '2':
             //call function that starts the fantasy storyline
             cout << name << " decides to ...";
+            fantasy_story();
             break;
           default:
             cout << "Please choose again." << endl; // FIND WAY TO LOOP UNTIL THERE IS VALID INPUT

@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void dragon_hoard();
+void dragon_hoard_intro();
 void find_artifact();
 
 void choiceLeft();
@@ -25,40 +25,59 @@ void findAlternateRoute();
 void encounterDragon();
 void reasonWithDragon();
 void engageDragon();
+void intro_route();
+void scenario1_start();
 
-
-
-void fantasy_story(){
+void intro_route(){
     char choice;
-    cout<< "You are asked to try a new video game at your friend’s house. As soon as you boot the game up, you find yourself inside the game itself. You have no idea how you got there. You cannot find your friend. You find yourself in the armory of a castle. Everyone around you is putting on armor and gathering weapons. Someone taps you on the shoulder and tells you to put on the armor and to get a weapon. “What platoon are you a part of? A or B?” "<< endl;
-    cout << "\tOption A - raiding a dragon hoard" << endl;
-    cout << "\tOption B - finding artifact for great wizard" << endl;
-    cout << "Choose 'A' or 'B'" << endl;
+    cout << "“What platoon are you a part of? A or B?”" << endl;
+    cout << "\tOption 1 - raiding a dragon hoard" << endl;
+    cout << "\tOption 2 - finding artifact for great wizard" << endl;
+    cout << "Choose '1' or '2'" << endl;
     cin >> choice;
     switch(choice){
-        case 'A':
-            dragon_hoard();
-        case 'B':
+        case '1':
+            dragon_hoard_intro();
+        case '2':
             find_artifact();
         default:
             cout << "This is not proper input. Choose '1' or '2'";
+            intro_route();
     }   
-    
 }
 
-void dragon_hoard(){
+void fantasy_story(){
+    // char choice;
+    cout<< "You are asked to try a new video game at your friend’s house. As soon as you boot the game up, you find yourself inside the game itself. You have no idea how you got there. You cannot find your friend. You find yourself in the armory of a castle. Everyone around you is putting on armor and gathering weapons. Someone taps you on the shoulder and tells you to put on the armor and to get a weapon." << endl;
+    intro_route();   
+    
+}
+void find_artifact(){
+    cout << "Jessie story";
+}
+void scenario_1(){
+    char choice;
+    cout << "Option 1: Go left" << endl;
+    cout << "Option 2: Go right" << endl;
+    cout << "Which option do you choose (1/2)? ";
+  cin >> choice;
+  cout << endl;
+  switch(choice){
+    case '1':
+   cout << "You and your platoon go in the left direction and encounter guards. They are not letting you and your platoon go inside. You have two options. 1 Negotiate, or 2 use combat. " << endl;
+   break;
+   case '2':
+   cout << "You decide to venture down the path to the right, hoping it will lead you to the dragon's hoard. You come across a fork in the path. To the left, you see a dimly lit corridor, while to the right, there appears to be a faint glimmer of light." << endl;
+   break;
+   default:
+   cout << "Please choose again." << endl;
+   scenario_1();
+  }
+}
+void dragon_hoard_intro(){
  char choice;    
- cout << "The kingdom is facing an economic crisis. To solve this, the king has sent your platoon to raid a dragon hoard to bring back whatever riches could help the kingdom. You and your platoon set off on a journey and find the cavern where the dragon lives. You enter the cavern, and you have two options. Go left or right:"<< endl;
- cout<< "What would you like to do?" << endl;
- cout << "\tEnter '1' to go left" << endl;
- cout << "\tEneter '2' to go right" << endl;
- if (choice == '1'){
-    choiceLeft();    
- } else if (choice == '2') {
-    choiceRight();
- } else {
-    cout << "Invalid input" << endl;
- }
+ cout << "The kingdom is facing an economic crisis. To solve this, the king has sent your platoon to raid a dragon hoard to bring back whatever riches could help the kingdom. You and your platoon set off on a journey and find the cavern where the dragon lives. You enter the cavern, and you have two options." << endl;
+ scenario_1();
  
 }
 
