@@ -1,5 +1,5 @@
 #include<iostream>
-#include "horror_ignore_route.cpp"
+#include "horror_IgnoreRoute.cpp"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ void horror_storyline(){
   cout << endl;
   switch (choice){
     case '1':
-      cout << "" << endl;
+      cout << "" << endl; // JAIR'S PART OF HORROR STORY
       break;
     case '2':
       cout << "You and your friend get to work with setting up the camp before night falls." << endl; 

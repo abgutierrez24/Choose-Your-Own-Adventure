@@ -1,7 +1,7 @@
 #include "horror_intro.cpp"
 #include <iostream>
 #include <string>
-#include "fantasy_story.cpp"
+// #include "fantasy_story.cpp"
 
 
 using namespace std;
