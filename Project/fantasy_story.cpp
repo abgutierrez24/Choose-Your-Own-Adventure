@@ -8,6 +8,10 @@ void left_route();
 void negotiate_route1();
 void combat_guardsRoute();
 void negotiate_route2();
+void right_route();
+
+
+
 void fantasy_storyline(){
     char choice;
     cout << "“What platoon are you a part of? 1 or 2?”" << endl;
@@ -47,7 +51,8 @@ void scenario_1(){
    left_route();   
    break;
    case '2':
-   cout << "You decide to venture down the path to the right, hoping it will lead you to the dragon's hoard. You come across a fork in the path. To the left, you see a dimly lit corridor, while to the right, there appears to be a faint glimmer of light." << endl;
+   cout << "You decide to venture down the path to the right, hoping it will lead you to the dragon's hoard. You come across a fork in the path. To the left, you see a dimly lit corridor, while to the right, there appears to be a faint glimmer of light. Which path do you chooose?" << endl;
+   right_route();
    break;
    default:
    cout << "Invalid input. Please choose again." << endl;
@@ -135,7 +140,20 @@ void combat_guardsRoute(){
         default:
         cout << "Invalid input. Please choose again" << endl;
         combat_guardsRoute();
-
     }
+}
 
+void right_route(){
+char choice;
+    cout << "\tOption 1: Left" << endl;
+    cout << "\tOption 2: Right" << endl;
+    cout << "Which option do you choose (1/2)? ";
+    cin >> choice;
+    switch(choice){
+        case '1':
+        cout << "You go to explore the left corridor, hoping it will lead you to the dragon's lair. As you venture deeper into the darkness, the passage narrows, and you find yourself navigating through a labyrinth of twists and turns. Suddenly, you hear a rumbling noise from up ahead. You and your platoon spot a massive boulder blocking the path." << endl;
+        case '2':
+        cout << "Curious about the faint glimmer of light, you choose to explore the right corridor. As you venture deeper into the cavern, the light grows brighter, illuminating your path. Suddenly, you come face to face with a massive dragon guarding its hoard. The beast roars in fury, its eyes gleaming with malice." << endl;
+        
+    }
 }
