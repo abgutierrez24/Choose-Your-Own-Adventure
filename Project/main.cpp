@@ -32,11 +32,12 @@ int main(){
             break;
           case '2':
             //call function that starts the fantasy storyline
-            cout << name << " decides to try a new video game at their friend’s house." << endl;
-            cout << "As soon as " << name << " boots the game up, they find themselves inside the game itself." << endl;
+            cout << name << " decides to try a new video game at their friend’s house. As soon as\n";
+            cout << name << " boots the game up, they find themselves inside the game itself." << endl;
             cout << "They have no idea how they got there and they cannot find their friend." << endl;
-            cout << "They find themselfes in the armory of a castle. Everyone around "<< name << " is putting on armor and " << endl;
-            cout << "gathering weapons. Someone taps " << name << " on the shoulder and tells them to put on the armor and to get a weapon." << endl;
+            cout << "They find themselfes in the armory of a castle. Everyone around "<< name << endl;
+            cout <<" is putting on armor and gathering weapons. Someone taps " << name << " on the" << endl;;
+            cout << "shoulder and tells them to put on the armor and to get a weapon." << endl;
             fantasy_storyline();
             break;
           default:

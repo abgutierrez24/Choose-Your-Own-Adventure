@@ -13,7 +13,7 @@ void right_route();
 void boulder_route();
 void monsters_route();
 void traps_route();
-
+void encounter_dragonRoute();
 
 
 void fantasy_storyline(){
@@ -160,6 +160,7 @@ char choice;
         break;
         case '2':
         cout << "Curious about the faint glimmer of light, you choose to explore the right corridor. As you venture deeper into the cavern, the light grows brighter, illuminating your path. Suddenly, you come face to face with a massive dragon guarding its hoard. The beast roars in fury, its eyes gleaming with malice." << endl;
+        encounter_dragonRoute();
         break;
         default:
         cout << "Invalid input. Please choose again" << endl;
@@ -167,6 +168,26 @@ char choice;
         
     }
 }
+void encounter_dragonRoute(){
+    char choice;
+    cout << "Option 1: Attempt to reason with the dragon" << endl;
+    cout << "Option 2: Engage it in combat" << endl; 
+    cout << "Which option do you choose (1/2)? ";
+    cin >> choice;
+    switch(choice){
+        case '1': 
+        cout << "You step forward and try to reason with the dragon, explaining that you mean no harm and only seek to retrieve some of its treasure to help your kingdom. Surprisingly, the dragon listens to your plea and agrees to let you take a portion of its hoard. Grateful for the dragon's generosity, you gather as much treasure as you can carry before bidding the creature farewell and making your way back to the surface. " << endl;
+        break;
+        case '2':
+        cout << "You draw your weapons and prepare to do battle with the dragon. The creature lunges at you with claws and teeth bared, and a fierce struggle ensues. Despite your best efforts, the dragon proves to be a formidable opponent. With wounds mounting and your platoon suffering casualties, you realize that victory is unlikely. In a last-ditch effort to save yourself and your remaining comrades, you retreat from the cavern, defeated." << endl;
+        break;
+        default:
+        cout << "Invalid input. Please choose again." << endl;
+        encounter_dragonRoute();        
+    }
+ 
+}
+
 void boulder_route(){
     char choice;
     cout << "\tOption 1: Move the boulder." << endl;
@@ -213,7 +234,8 @@ void traps_route(){
     cin >> choice;
     switch(choice){
         case '1':
-        cout << "Recognizing the danger posed by the traps, you and your platoon carefully disarm them one by one. With patience and caution, you successfully neutralize the traps, clearing the way forward. Pressing onward, you finally reach the dragon's lair. Inside, you discover a vast hoard of treasure, gleaming in the dim light. Success! You gather as much treasure as you can carry and make your way back to the surface, triumphant." << endl;
+        cout << "Recognizing the danger posed by the traps, you and your platoon\n";
+        cout <<"carefully disarm them one by one. With patience and caution, you successfully neutralize the traps, clearing the way forward. Pressing onward, you finally reach the dragon's lair. Inside, you discover a vast hoard of treasure, gleaming in the dim light. Success! You gather as much treasure as you can carry and make your way back to the surface, triumphant." << endl;
         break;
         case '2':
         cout << "Instead of risking direct confrontation with the traps, you and your platoon find an alternate route to bypass them. You navigate through hidden passageways and secret tunnels, avoiding the traps altogether. However, soon you find yourselves hopelessly lost in the maze of passages. It results in you and your platoon failing the mission. " << endl;
@@ -222,5 +244,4 @@ void traps_route(){
         cout << "Invalid input. Please choose again." << endl;
         traps_route();       
     }
-
 }
