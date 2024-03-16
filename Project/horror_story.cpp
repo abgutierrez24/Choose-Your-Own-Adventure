@@ -17,11 +17,15 @@ void shadowAppearance();
 void fightBack();
 void runAway();
 void confrontSound();
+void goingToSleep();
+void sleepingTime();\
+void noSleep();
 void goBackToSleep();
-void exploreNight();
-void wakeUpFriend();
-void leaveNow();
-void tellFriend();
+void wakeFriend();
+void goingBackToSleep();
+void plannedOut();
+void tryConvincing();
+
 
 
 void exploreCampground() {
@@ -129,6 +133,109 @@ void explainSound() {
             explainSound();      
     }
 
+}
+
+void observeCarefully() {
+    int choice;
+    cout << "Eventually the sound goes away and you and your friend are hesitating whether to confront or go to bed." << endl; 
+    cout << "What do you choose?" << endl;
+    cout << "Option 1: Confront the sound." << endl;
+    cout << "option 2: Go to bed." << endl;
+    cin >> choice;
+    switch(choice) {
+        case 1:
+            confrontSound();
+            break;
+        case 2:
+            goingToSleep();
+            break;
+        default:
+            cout << "Invalid choice!" << endl;
+            observeCarefully();            
+    }
+
+}
+
+
+void confrontSound() {
+    plannedOut();
+}
+
+void goingToSleep() {
+    int choice;
+    cout << " You and your friend start getting ready for bed and he tells you goodnight. You on the other hand begin to question if you should fall asleep or stay awake in case you hear the sound." << endl;
+    cout << "What do you choose? " << endl;
+    cout << "Option 1: Go to sleep and hope for the best." << endl;
+    cout << "Option 2: Stay awake to see if you can find the shadow and hear the sound." << endl;
+    cin >> choice;
+    switch (choice) {
+        case 1: 
+            sleepingTime();
+            break;
+        case 2:
+            noSleep();
+        default:
+            cout << "Invalid choice!" << endl;
+            goingToSleep();
+    }
+}
+
+
+void sleepingTime() {
+    int choice;
+    cout << "After 3hrs of sleeping you are interrupted by some sort of stomping around the campsite you begin to panic because it's you and your friend staying. No one else. To top it off you hear a loud scream as if someone was getting stabbed." << endl;
+    cout << "What do you do?" << endl;
+    cout << "Option 1: Wake up your friend and tell him about what you heard." << endl;
+    cout << "Option 2: Ignore the noises and try to go back to sleep." << endl;
+    cin >> choice;
+    switch(choice) {
+        case 1: 
+            wakeFriend();
+            break;
+        case 2:
+            goingBackToSleep();
+            break
+        default:
+            cout << "Invalid choice!" << endl;
+            sleepingTime();                
+    }    
+}
+
+void wakeFriend() {
+    int choice;
+    cout << "You wake your friend up and tell him about the screaming and stomps in the campground. Confused about it you begin to question if your friend heard it as well and saw the shadow earlier. Your friend tells you if you want to explore in the middle of the night just to see if yall can find anything and if not then go back to sleep." << endl;
+    cout << "What do you do?" << endl;
+    cout << "Option 1: Go along with the plan." << endl;
+    cout << "Option 2: Go back to sleep and convince him to do the same thing."<< endl;
+    cin >> choice;
+    switch (choice) {
+        case 1:
+            plannedOut();
+            break;
+        case 2:
+            tryConvincing();
+            break;
+        default:
+        cout << "Invalid choice." << endl;
+        wakeFriend();        
+    }
+    
+}
+
+void goingBackToSleep() {
+    cout << "Congratulations you have made it through a harsh night full of scary things." << endl;
+}
+
+void plannedOut() {
+    int choice;
+    cout << "You and your friend start exploring where the sound came from. Upon going a little bit further you and your friend stumble upon a pond and find nothing so you and your friend decide to go back and call it a night. Once you begin to walk back you turn around and see a white shiny figure about 6 ft tall with long hair covering its face just standing in the middle of the pond." << endl;
+    cout << "What do you do?" << endl;
+    cout << "Option 1: Tell your friend to look at what you saw."<< endl;
+    cout << "Option 2: Tell your friend to Run with no explanation." << endl;
+    cin >> choice;
+    switch(choice) {
+        case 1:
+    }
 }
 
 // void questionSound() {
