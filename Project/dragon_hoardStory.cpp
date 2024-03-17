@@ -1,9 +1,14 @@
 #include <iostream>
 #include "dragon_hoardStory.h"
+#include "ArkenstoneFunctions.h"
 using namespace std;
-
+/*
+This is the first set of options in the 
+dragon hoard story presented in the scenario_1 function
+*/ 
 void scenario_1(){
     char choice;
+    starbar();
     cout << "\tOption 1: Go left" << endl;
     cout << "\tOption 2: Go right" << endl;
     cout << "Which option do you choose (1/2)? ";
@@ -27,8 +32,15 @@ void scenario_1(){
    scenario_1();
   }
 }
+
+/*
+The left_route function is called when the user decides to 
+go in the left which was presented in the scenario_1 function.
+It gives the user two more choices to unveil the storyline.
+*/
 void left_route(){
     char choice;
+    starbar();
     cout << "\tOption 1: Negotiate" << endl;
     cout << "\tOption 2: Engage in combat" << endl;
     cout << "Which option do you choose (1/2)? ";
@@ -57,8 +69,15 @@ void left_route(){
     }
 
 }
+
+/*
+This function is called when the user chooses the option to 
+negotiate, which was presented in the left_route function. This function 
+presents two more options to the user.
+*/
 void negotiate_route1(){
     char choice;
+    starbar();
     cout << "\tOption 1: Skull." << endl;
     cout << "\tOption 2: A blind person's eye." << endl;
     cout << "Which option do you choose (1/2)? ";
@@ -66,10 +85,12 @@ void negotiate_route1(){
     cout << endl;
     switch(choice){
         case '1':
+        // If user chooses option 1, the story stops as it is the wrong answer.
         cout << "The guard shakes his head. 'Sorry, that's incorrect. You may not pass.' You and your " << endl;
         cout << "platoon are forced to retreat from the cavern, empty-handed." << endl;
         break;
         case '2':
+        //The correct answer results in the continuation of the story.
         cout << "The guard nods in approval. 'Correct! You may enter.' With the riddle solved, the " << endl;
         cout << "guards step aside, allowing you and your platoon to enter the cavern." << endl;
         cout << endl;
@@ -88,8 +109,13 @@ void negotiate_route1(){
     }
     
 }
+/*
+This function is the continuing part of the story from 
+negotiate_route1 function. 
+*/
 void negotiate_route2(){
     char choice;
+    starbar();
     cout << "\tOption 1: Fight the creatures." << endl;
     cout << "\tOption 2: Retreat." << endl;
     cout << "Which option do you choose (1/2)? ";
@@ -113,9 +139,12 @@ void negotiate_route2(){
             negotiate_route2();
     }
 }
+/*
 
+*/
 void combat_guardsRoute(){
     char choice;
+    starbar();
     cout << "\tOption 1: A steep staircase leading upwards." << endl;
     cout << "\tOption 2: A narrow bridge spanning a chasm below." << endl;
     cout << "Which option do you choose (1/2)? ";
@@ -138,9 +167,12 @@ void combat_guardsRoute(){
         combat_guardsRoute();
     }
 }
+/*
 
+*/
 void right_route(){
-char choice;
+    char choice;
+    starbar();
     cout << "\tOption 1: Left" << endl;
     cout << "\tOption 2: Right" << endl;
     cout << "Which option do you choose (1/2)? ";
@@ -167,8 +199,12 @@ char choice;
         
     }
 }
+/*
+
+*/
 void encounter_dragonRoute(){
     char choice;
+    starbar();
     cout << "\tOption 1: Attempt to reason with the dragon" << endl;
     cout << "\tOption 2: Engage it in combat" << endl; 
     cout << "Which option do you choose (1/2)? ";
@@ -195,9 +231,12 @@ void encounter_dragonRoute(){
     }
  
 }
+/*
 
+*/
 void boulder_route(){
     char choice;
+    starbar();
     cout << "\tOption 1: Move the boulder." << endl;
     cout << "\tOption 2: Find an alternate route." << endl;
     cout << "Which option do you choose (1/2)? ";
@@ -223,8 +262,13 @@ void boulder_route(){
         boulder_route();
     }  
 }
+
+/*
+
+*/
 void monsters_route(){
     char choice;
+    starbar();    
     cout << "\tOption 1: Engage in combat" << endl;
     cout << "\tOption 2: Use stealth" << endl;
     cout << "Which option do you choose (1/2)? ";
@@ -247,8 +291,13 @@ void monsters_route(){
         monsters_route();
     }
 }
+
+/*
+
+*/
 void traps_route(){
     char choice;
+    starbar(); 
     cout << "\tOption 1: Disarm the traps" << endl;
     cout << "\tOption 2: Find a way to bypass them" << endl;
     cout << "Which option do you choose (1/2)? ";

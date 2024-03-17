@@ -1,5 +1,5 @@
 #include<iostream>
-#include "horror_branch1.h"
+#include "horror_branch1.cpp"
 #include "horror_branch2.cpp"
 
 using namespace std;
@@ -16,7 +16,7 @@ void horror_storyline(){
     case '1':
       cout << "Upon exploring the campground you and your friend begin to hear someone laughing loud that can't be accounted for." << endl;
       cout << "What do you do?" << endl;
-      void exploreCampground();
+      exploreCampground();
       break;
     case '2':
       cout << "You and your friend get to work with setting up the camp before night falls." << endl; 

@@ -5,7 +5,11 @@
 using namespace std;
 
 
-
+/*
+This function lets the user choose
+which platton they want to be part of.
+It is the start of the fantasy storyline.
+*/
 void fantasy_storyline(){
     char choice;
     cout << "“What platoon are you a part of? 1 or 2?”" << endl;
