@@ -2,11 +2,14 @@
 
 # Choose Your Own Adventure
 
-This project is a user-input centered game.
+This project is a user-input centered game. It unravels a story that depends on the user's choices.
+Some bugs that were encountered are:
+* Making the program accept different input types and ask the user to re-input their choice.
+* Calling on functions that have not yet been declared, causing an error when the program runs.
 
-Add information about your project.
+<!-- Add information about your project.
 Such as detailed description, known bugs and user operation instructions.
-This is the file a user will first look at when attempting to run your program.
+This is the file a user will first look at when attempting to run your program. -->
 
 ## Terminal Commands
 
