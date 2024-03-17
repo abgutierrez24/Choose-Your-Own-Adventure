@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "horror_branch1.cpp"
+#include "horror_story.cpp"
 using namespace std;
 void ending8();
 void ending7();
@@ -19,3 +19,4 @@ void fork2A();
 void fork1B();
 void fork1A();
 void start();
+void horror_storyline();
