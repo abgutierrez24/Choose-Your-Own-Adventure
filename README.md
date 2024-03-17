@@ -3,9 +3,12 @@
 # Choose Your Own Adventure
 
 This project is a user-input centered game. It unravels a story that depends on the user's choices.
-Some bugs that were encountered are:
+Some bugs and challenges that were encountered are:
 * Making the program accept different input types and ask the user to re-input their choice.
 * Calling on functions that have not yet been declared, causing an error when the program runs.
+* Accidentally losing all the files because of misunderstanding a git command
+* Having difficulty merging branches in git
+* Integrating the use of classes
 
 <!-- Add information about your project.
 Such as detailed description, known bugs and user operation instructions.
