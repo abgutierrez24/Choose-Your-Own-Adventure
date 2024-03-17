@@ -37,7 +37,7 @@ int main(){
             cout << "They have no idea how they got there and they cannot find their friend." << endl;
             cout << "They find themselfes in the armory of a castle. Everyone around "<< name << " is putting on armor and " << endl;
             cout << "gathering weapons. Someone taps " << name << " on the shoulder and tells them to put on the armor and to get a weapon." << endl;
-            fantasy_storyline();
+            // fantasy_storyline();
             break;
           default:
             cout << "Please choose again." << endl; // FIND WAY TO LOOP UNTIL THERE IS VALID INPUT

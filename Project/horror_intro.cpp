@@ -1,5 +1,5 @@
 #include<iostream>
-#include "horror_IgnoreRoute.cpp"
+#include "horror_branch1.cpp"
 
 using namespace std;
 
@@ -19,7 +19,7 @@ void horror_storyline(){
       cout << "You and your friend get to work with setting up the camp before night falls." << endl; 
       cout << "Just as you start bringing over you and your friends bags to the area you chose to camp in," << endl;
       cout << "your friend walks up to you and asks if you want to explore the surroundings before starting." << endl;
-      scenario1_start();
+      start();
       break;
     default:
      cout << "please choose again." << endl;
