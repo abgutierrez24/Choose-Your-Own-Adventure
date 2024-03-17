@@ -8,20 +8,14 @@ using namespace std;
 /*
 Two stories. Continual forking style.
 */
-
-int main(){
-    string name;
-    char storyChoice;
-    cout << "Type out your character's name: ";
-    getline(cin, name);
-    cout << name << " wakes up in bed. Rolling over to check their phone, they see a text message from two of their friends. " << name 
-    << " sees that one friend is inviting them to a night out camping. The other friend is inviting them to play a video game at their friend's house." << endl;
+void begin(string name){
+    char choice;
     cout << "\tOption 1: Go camping." << endl;
     cout << "\tOption 2: Play some video games." << endl;
       cout << name << ", whose invitation will you accept (1/2)? ";
-      cin >> storyChoice;
+      cin >> choice;
       cout << endl;
-      switch (storyChoice){
+      switch (choice){
           case '1':
             //call function that starts the horror storyline
             cout << name << " decides to reply to the text inviting them to go camping. " << endl;
@@ -40,7 +34,18 @@ int main(){
             // fantasy_storyline();
             break;
           default:
-            cout << "Please choose again." << endl; // FIND WAY TO LOOP UNTIL THERE IS VALID INPUT
+            cout << "Please choose again." << endl;
+            begin(name);
     }
+}
+
+int main(){
+    string name;
+    cout << "Type out your character's name: ";
+    getline(cin, name);
+    cout << name << " wakes up in bed. Rolling over to check their phone, they see a text message from two of their friends." << endl;
+    cout << name << " sees that one friend is inviting them to a night out camping. The other friend is inviting them to play" << endl;
+    cout << "a video game at their friend's house." << endl;
+    begin(name);
     return 0;
 }
