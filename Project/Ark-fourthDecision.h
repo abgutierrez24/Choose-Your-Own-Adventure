@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
 #include "ArkenstoneFunctions.h"
-#include "sixthDecision.cpp"
+#include "Ark-fourthDecision.cpp"
 
-void OptionalSixth(int choice);
+int fourthDecision(int choice);

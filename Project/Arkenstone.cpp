@@ -1,13 +1,13 @@
 #include "ArkenstoneFunctions.h"
-#include "1-3Decisions.h"
-#include "fourthDecision.h"
-#include "fifthDecision.h"
-#include "sixthDecision.h"
+#include "Ark-1-3Decisions.h"
+#include "Ark-fourthDecision.h"
+#include "Ark-fifthDecision.h"
+#include "Ark-sixthDecision.h"
 #include <limits>
 #include <string>
 #include <iostream>
 
-int main(){
+int ArkenstoneStory(){
     int firstChoice;
     int secondChoice;
     int thirdChoice;
