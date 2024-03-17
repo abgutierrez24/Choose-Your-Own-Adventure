@@ -3,7 +3,7 @@
 ## Problem Definition
 
 The goal for this project is to create a game that tells a story depending on the user's input.
-After a excerpt from the story is output for the user to read, it will provide two choices for the user to choose from.
+After an excerpt from the story is output for the user to read, it will provide two choices for the user to choose from.
 This leads to the story forking at each choice, creating different endings for the story.
 
 ### Key Features
@@ -15,10 +15,10 @@ This leads to the story forking at each choice, creating different endings for t
 
 ### Assumptions
 
-User inputs correct input.
+The user will input the correct input.
 
-The users of the system are good actors. 
-No security (authtentication and permissions) will be implemented for this project.
+<!-- The users of the system are good actors. 
+No security (authtentication and permissions) will be implemented for this project. -->
 
 ## Group Members
 
