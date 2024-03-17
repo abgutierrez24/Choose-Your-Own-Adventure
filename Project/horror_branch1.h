@@ -1,0 +1,19 @@
+#pragma once
+
+void start();
+void fork1A();
+void fork1B();
+void fork2A();
+void fork2B();
+void fork2C();
+void fork2D();
+void fork3A();
+void fork3B();
+void ending1();
+void ending2();
+void ending3();
+void ending4();
+void ending5();
+void ending6();
+void ending7();
+void ending8();
