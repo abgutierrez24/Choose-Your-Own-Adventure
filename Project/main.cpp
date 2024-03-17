@@ -2,7 +2,7 @@
 #include "fantasy_story.cpp"
 #include <iostream>
 #include <string>
-// #include "fantasy_story.cpp"
+#include "fantasy_story.cpp"
 
 
 using namespace std;
@@ -30,8 +30,10 @@ void begin(string name){
             cout << name << " decides to try a new video game at their friend’s house. As soon as\n";
             cout << name << " boots the game up, they find themselves inside the game itself." << endl;
             cout << "They have no idea how they got there and they cannot find their friend." << endl;
-            cout << "They find themselfes in the armory of a castle. Everyone around "<< name << " is putting on armor and " << endl;
-            cout << "gathering weapons. Someone taps " << name << " on the shoulder and tells them to put on the armor and to get a weapon." << endl;
+            cout << "They find themselves in the armory of a castle. Everyone around "<< name << endl;
+            cout <<" is putting on armor and gathering weapons. Someone taps " << name << " on the" << endl;;
+            cout << "shoulder and tells them to put on the armor and to get a weapon." << endl;
+            cout << endl;
             fantasy_storyline();
             break;
           default:
