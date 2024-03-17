@@ -6,7 +6,7 @@ using namespace std;
 void horror_storyline(){
   char choice;
   cout << "Upon arriving there what is the first thing you do?" << endl;
-  cout << "\tOption 1. Explore the campground." << endl;
+  cout << "\tOption 1: Explore the campground." << endl;
   cout << "\tOption 2: Set up the campsite for the weekend." <<endl;
   cout << "Which option do you choose (1/2)? ";
   cin >> choice;

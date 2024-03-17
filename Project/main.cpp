@@ -46,6 +46,7 @@ int main(){
     cout << name << " wakes up in bed. Rolling over to check their phone, they see a text message from two of their friends." << endl;
     cout << name << " sees that one friend is inviting them to a night out camping. The other friend is inviting them to play" << endl;
     cout << "a video game at their friend's house." << endl;
+    cout << endl;
     begin(name);
     return 0;
 }
