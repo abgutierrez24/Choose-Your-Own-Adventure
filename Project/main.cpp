@@ -5,6 +5,7 @@
 #include "fantasy_story.cpp"
 
 
+
 using namespace std;
 /*
 Two stories. Continual forking style.
