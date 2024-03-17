@@ -1,48 +1,8 @@
-#include <algorithm>
-#include <bits/types/FILE.h>
+// #include <algorithm>
+// #include <bits/types/FILE.h>
 #include <iostream>
-#include <ostream>
 using namespace std;
-
-void exploreCampground();
-void runAndSetup();
-void continueExploring();
-void seekHelp();
-void explainSound();
-void observeCarefully();
-void prepareForBed();
-void questionSound();
-void findMyWayBack();
-void shadowAppearance();
-void fightBack();
-void runAway();
-void confrontSound();
-void goingToSleep();
-void sleepingTime();
-void noSleep();
-void goBackToSleep();
-void wakeFriend();
-void goingBackToSleep();
-void plannedOut();
-void tryConvincing();
-void tellWhileRunning();
-void tellLater();
-void haveHimBeileveYou();
-void betrayalToFriend();
-void keepPromise();
-void brokenPromise();
-void rightNow();
-void inTheMorning();
-void informRightNow();
-void informLater();
-void refuseSleep();
-void nowSleep();
-
-
-
-
-
-
+#include "horror_branch2.h"
 
 void plannedOut() {
     int choice;
