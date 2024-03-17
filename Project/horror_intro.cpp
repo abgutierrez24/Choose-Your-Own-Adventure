@@ -14,7 +14,7 @@ void horror_storyline(){
   cout << endl;
   switch (choice){
     case '1':
-      cout << "" << endl; //JAIR'S STORYLINE 
+      void exploreCampground();
       break;
     case '2':
       cout << "You and your friend get to work with setting up the camp before night falls." << endl; 
