@@ -13,6 +13,7 @@ int ArkenstoneStory(){
     int thirdChoice;
     int fourthChoice;
     int fifthChoice;
+    int sixthChoice;
     std::cout << "The kingdom is currently experiencing a drought.\n" 
         << "The great wizard of the kingdom says he can bring rain, but he needs the Arkenstone to accomplish this.\n"
         << "The king has directed the platoon you are part of to go find the Arkenstone."
@@ -28,5 +29,6 @@ int ArkenstoneStory(){
     thirdChoice = secondDecision(secondChoice);
     fourthChoice = thirdDecision(thirdChoice);
     fifthChoice = fourthDecision(fourthChoice);
-    fifthDecision(fifthChoice);
+    sixthChoice = fifthDecision(fifthChoice);
+    OptionalSixth(sixthChoice);
 }
