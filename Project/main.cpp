@@ -38,6 +38,7 @@ int main(){
             cout << "They find themselfes in the armory of a castle. Everyone around "<< name << endl;
             cout <<" is putting on armor and gathering weapons. Someone taps " << name << " on the" << endl;;
             cout << "shoulder and tells them to put on the armor and to get a weapon." << endl;
+            cout << endl;
             fantasy_storyline();
             break;
           default:
