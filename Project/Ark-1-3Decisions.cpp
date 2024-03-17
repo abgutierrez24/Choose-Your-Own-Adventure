@@ -1,6 +1,103 @@
 #include <iostream>
 #include "ArkenstoneFunctions.h"
 
+int firstDecision(int choice){
+    int newChoice;
+    switch (choice){
+        case 1:
+            std::cout << "Your platoon journeys in the northeastern direction.\n"
+                << "After a while, your platoon encounters a group of fairies."
+                << "They ask why you are here. What do you say?" << std::endl;
+            starbar();
+            std::cout << "1. Be Honest\n2. Lie About Your Intentions" << std::endl;
+            newChoice = input();
+            if (newChoice == 1){
+                return 1; // Be Honest (fairies lie about direction)
+            }
+            else {
+                return 2; // Lie About Your Intentions (fairies tell truth about direction)
+            }
+            break;
+        case 2:
+            std::cout << "Your platoon journeys in the northwestern direction.\n"
+            << "As you journey through the forest, everything begins to seem less wild and more well-kept.\n"
+            << "You encounter a large tree wall with a locked golden gate.\n"
+            << "There seems to bell on your side of the gate." << std::endl;
+            starbar();
+            std::cout << "1. Ring the Bell\n2. Try to Break Through the Gate" << std::endl;
+            newChoice = input();
+            if (newChoice == 1){
+                return 3; // Ring the Bell
+            }
+            else {
+                return 4; // Try to break through the gate
+            }
+            break;
+    }
+}
+
+int secondDecision(int choice){
+    int newChoice;
+    switch (choice){
+        case 1: // Be Honest
+            std::cout << "After telling the fairies you intend to take the Arkenstone,\n"
+                << "The fairies tell you that their kingdom is to the East." << std::endl;
+            std::cout << "Do you believe the fairies and go east,\n"
+            << "or do you travel west?" << std::endl;
+            starbar();
+            std::cout << "1. Travel West\n2. Travel East" << std::endl;
+            newChoice = input();
+            if (newChoice == 1){
+                return 1; // West
+            }
+            else {
+                return 2; // East
+            }
+            break;
+        case 2: // Lie About Your Intentions
+            std::cout << "After telling them you are here to discuss a trade deal with the Queen,\n"
+                << "the fairies tell you that their kingdom is to the East." << std::endl;
+            std::cout << "Do you believe the fairies and go east,\n"
+            << "or do you travel west?" << std::endl;
+            starbar();
+            std::cout << "1. Travel East\n2. Travel West" << std::endl;
+            newChoice = input();
+            if (newChoice == 1){
+                return 2; // East
+            }
+            else {
+                return 1; // West
+            }
+            break;
+        case 3: // Ring the Bell
+            std::cout << "You ring the bell. A Fairy appears in front of you and \n"
+                << "asks you what your purpose is." << std::endl;
+            starbar();
+            std::cout << "1. Be Honest\n2. Lie About Your Intentions" << std::endl;
+            newChoice = input();
+            if (newChoice == 1){
+                return 3; // Be Honest at the gate
+            }
+            else {
+                return 4; // Lie About Your Intentions at the gate
+            }
+            break;
+        case 4: // Try to break through the gate
+            std::cout << "The gate is unbreakable, but your platoon was able to squeeze you and a few others through.\n"
+            << "What do you do now?" << std::endl;
+            starbar();
+            std::cout << "1. Try to Find the Queen\n2. Sneakily find the Arkenstone" << std::endl;
+            newChoice = input();
+            if (newChoice == 1){
+                return 5; // Find the Queen
+            }
+            else {
+                return 6; // Sneakily find Arkenstone
+            }
+            break;         
+    }
+}
+
 int thirdDecision(int choice){
     int newChoice;
     switch (choice){

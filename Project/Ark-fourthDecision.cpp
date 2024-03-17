@@ -11,10 +11,10 @@ int fourthDecision(int choice){
             std::cout << "1. Yes\n2. No" << std::endl;
             newChoice = input();
             if (newChoice == 1){
-                return 1; // Yes
+                return 1; // Yes food 
             }
             else {
-                return 2; // No
+                return 2; // No food
             }
             break;
         case 2: // Return Empty-handed
@@ -90,76 +90,70 @@ int fourthDecision(int choice){
             } 
             break;  
         case 7: // Follow the Escorts
-            std::cout << "The platoon journeys west. After several days of finding nothing,\n"
-                << "supplies have begun to run low and your platoon is getting hungry. " << std::endl;
-            std::cout << "Do you search for food or return to the kingdom empty handed?" << std::endl;
-            starbar();
-            std::cout << "1. Search for Food\n2. Return Empty-handed" << std::endl;
-            newChoice = input();
-            if (newChoice == 1){
-                return 1; // Search for Food
-            }
-            else {
-                return 2; // Return Empty-handed
-            }
-            break;
-        case 8: // Sneak off from escorts
-            std::cout << "As you journey through the forest, everything begins to seem less wild and more well-kept.\n"
-            << "As you begin to approach a golden gate, a group of fairy warriors come out and lead you to the fairy queen,"
-            << "for they heard about your mission from the prior fairies. They escort you to the Queen." << std::endl;
-            std::cout << "What do you tell the Queen?" << std::endl;
-            starbar();
-            std::cout << "1. \"Our kingdom is in a great dought and our wizard says he can bring rain with the Arkenstone\"\n2. *sneak off while your platoon filibusters to the Queen*" << std::endl;
-            newChoice = input();
-            if (newChoice == 1){
-                return 3; // Honesty wins
-            }
-            else {
-                return 4; // sneaky sneak
-            }
-            break;
-        case 9: // Be straight up (she hates you)
-            std::cout << "The fairy tells the platoon to get lost and to run as fast as they can,\n"
-            << "lest they die!" << std::endl;
-            std::cout << "What do you now?" << std::endl;
-            starbar();
-            std::cout << "1. Try to Break in Anyways!\n2. Run Away!" << std::endl;
-            newChoice = input();
-            if (newChoice == 1){
-                return 5; // Try to break in anyways!
-            }
-            else {
-                return 6; // Run away!
-            }
-            break;
-        case 10: // Cause a Distraction
-            std::cout << "Telling the fairy you are here to discuss a trade deal with the queen,\n"
-            << "the fairy opens the gate to let you and your platoon in. You are escorted to the Queen" << std::endl;
-            std::cout << "Do you follow or do you try to sneak off?" << std::endl;
-            starbar();
-            std::cout << "1. Follow the Escorts to the Queen\n2. Sneak off" << std::endl;
-            newChoice = input();
-            if (newChoice == 1){
-                return 7; // Follow the Escorts
-            }
-            else {
-                return 8; // Sneak off from escorts
-            }
-            break;
-        case 11: // Attack
-            std::cout << "You find the palace, and immediately guards ask you what you are doing.\n"
-                << "After explaining you are simply seeking the queen's attention to hear a trade deal,\n"
-                << "you are escorted inside. The queen is upset because you broke in \n"
-                << "instead of simply ringing the bell at the gate." << std::endl;
+            std::cout << "Following the escorts, you find youself in the presence of the Fairy Queen." << std::endl;
             std::cout << "What do you tell the Queen?" << std::endl;
             starbar();
             std::cout << "1. \"Our Kingdom is in a drought and our wizard has told us he can bring rain with the Arkenstone\"\n2. *sneak off while your platoon filibusters to the Queen*" << std::endl;
             newChoice = input();
             if (newChoice == 1){
-                return 9; // Be straight up (she hates you)
+                return 13; // Honesty wins
             }
             else {
-                return 10; // sneaky sneaky (same as return 4)
+                return 14; // snek
+            }
+            break;
+        case 8: // Sneak off from escorts
+            std::cout << "Sneaking off before entering the palace, you find a building separated from the others.\n"
+                << "It is more heavily guarded than the others. You suspect this is the building with the Arkenstone." << std::endl;
+            std::cout << "How do you Enter?" << std::endl;
+            starbar();
+            std::cout << "1. The Front Door\n2. The Roof!" << std::endl;
+            newChoice = input();
+            if (newChoice == 1){
+                return 15; // Front Door
+            }
+            else {
+                return 16; // The Roof
+            }
+            break;
+        case 9: // Be straight up (she hates you)
+            std::cout << "The queen hardly listened for two minutes before having you thrown in the dungeon." << std::endl;
+            std::cout << " Do you try to escape or wait for the rest of your comrades to come help?" << std::endl;
+            starbar();
+            std::cout << "1. Try to Escape\n2. Wait for your Comrades to Come Help" << std::endl;
+            newChoice = input();
+            if (newChoice == 1){
+                return 17; // Try to Escape
+            }
+            else {
+                return 18; // help will come, right?
+            }
+            break;
+        case 10: // Cause a Distraction
+            std::cout << "One of your comrades throws a rock at a tree and the other starts running around crazily." << std::endl;
+            std::cout << "No one is looking at you." << std::endl;
+            starbar();
+            std::cout << "1. Run in While You Can!\n2. Oh, Look! There's a hole!" << std::endl;
+            newChoice = input();
+            if (newChoice == 1){
+                return 19; // Run in While you Can
+            }
+            else {
+                return 20; // DMZ type hole
+            }
+            break;
+        case 11: // Attack
+            std::cout << "You are your comrades run at the building, yelling and screaming in the name of your king.\n"
+                << "After killing a few of the guards, you and your comrades are finally caught." << std::endl;
+            std::cout << "How do you Proceed?" << std::endl;
+            starbar();
+            std::cout << "1. \"We are not the enemies you are looking for\"\n2. \"You will never take me alive!\"" << std::endl;
+            newChoice = input();
+            if (newChoice == 1){
+                return 21; // Jedi Mind Tricks
+            }
+            else {
+                return 22; // do their job for them
             }
             break; 
     }

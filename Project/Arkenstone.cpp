@@ -1,14 +1,19 @@
-#include <iostream>
 #include "ArkenstoneFunctions.h"
+#include "Ark-1-3Decisions.h"
+#include "Ark-fourthDecision.h"
+#include "Ark-fifthDecision.h"
+#include "Ark-sixthDecision.h"
 #include <limits>
 #include <string>
+#include <iostream>
 
-int main(){
+int ArkenstoneStory(){
     int firstChoice;
     int secondChoice;
     int thirdChoice;
     int fourthChoice;
     int fifthChoice;
+    int sixthChoice;
     std::cout << "The kingdom is currently experiencing a drought.\n" 
         << "The great wizard of the kingdom says he can bring rain, but he needs the Arkenstone to accomplish this.\n"
         << "The king has directed the platoon you are part of to go find the Arkenstone."
@@ -24,5 +29,6 @@ int main(){
     thirdChoice = secondDecision(secondChoice);
     fourthChoice = thirdDecision(thirdChoice);
     fifthChoice = fourthDecision(fourthChoice);
-    fifthDecision(fifthChoice);
+    sixthChoice = fifthDecision(fifthChoice);
+    OptionalSixth(sixthChoice);
 }

@@ -1,7 +1,9 @@
 #include "horror_intro.cpp"
 #include <iostream>
 #include <string>
-// #include "fantasy_story.cpp"
+#include "fantasy_story.cpp"
+#include "class.h"
+
 
 
 using namespace std;
@@ -26,12 +28,14 @@ void begin(string name){
             break;
           case '2':
             //call function that starts the fantasy storyline
-            cout << name << " decides to try a new video game at their friend’s house." << endl;
-            cout << "As soon as " << name << " boots the game up, they find themselves inside the game itself." << endl;
+            cout << name << " decides to try a new video game at their friend’s house. As soon as\n";
+            cout << name << " boots the game up, they find themselves inside the game itself." << endl;
             cout << "They have no idea how they got there and they cannot find their friend." << endl;
-            cout << "They find themselfes in the armory of a castle. Everyone around "<< name << " is putting on armor and " << endl;
-            cout << "gathering weapons. Someone taps " << name << " on the shoulder and tells them to put on the armor and to get a weapon." << endl;
-            // fantasy_storyline();
+            cout << "They find themselves in the armory of a castle. Everyone around "<< name << endl;
+            cout <<" is putting on armor and gathering weapons. Someone taps " << name << " on the" << endl;;
+            cout << "shoulder and tells them to put on the armor and to get a weapon." << endl;
+            cout << endl;
+            fantasy_storyline();
             break;
           default:
             cout << "Please choose again." << endl;
@@ -40,12 +44,12 @@ void begin(string name){
 }
 
 int main(){
-    string name;
-    cout << "Type out your character's name: ";
-    getline(cin, name);
+    Player newPlayer;
+    std::string name = newPlayer.getName();
     cout << name << " wakes up in bed. Rolling over to check their phone, they see a text message from two of their friends." << endl;
     cout << name << " sees that one friend is inviting them to a night out camping. The other friend is inviting them to play" << endl;
     cout << "a video game at their friend's house." << endl;
+    cout << endl;
     begin(name);
     return 0;
 }
