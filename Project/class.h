@@ -6,7 +6,7 @@ class Player{
         Player(){
             std::string newName;
             std::cout << "Enter your player's name: ";
-            std::cin >> newName;
+            std::getline(std::cin, newName);
             this->name = newName;
         }
         std::string getName(){
