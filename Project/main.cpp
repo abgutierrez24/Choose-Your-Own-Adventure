@@ -1,5 +1,4 @@
 #include "horror_intro.cpp"
-#include "fantasy_story.cpp"
 #include <iostream>
 #include <string>
 #include "fantasy_story.cpp"

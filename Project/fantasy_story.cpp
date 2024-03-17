@@ -1,8 +1,8 @@
 #include <iostream>
+#include "fantasy_story.h"
 #include "dragon_hoardStory.cpp" 
+#include "Arkenstone.cpp"
 using namespace std;
-void dragon_hoard_intro();
-void find_artifact();
 
 
 
@@ -23,16 +23,11 @@ void fantasy_storyline(){
             scenario_1();
             break;            
         case '2':
-            find_artifact();
+            ArkenstoneStory();
             break;
         default:
             cout << "This is not proper input. Choose '1' or '2'";
             fantasy_storyline();
     }   
-}
-
-
-void find_artifact(){
-    cout << "Jessie story";
 }
 
