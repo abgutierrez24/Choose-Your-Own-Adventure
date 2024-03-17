@@ -157,4 +157,5 @@ int fourthDecision(int choice){
             }
             break; 
     }
+    return 100;
 }

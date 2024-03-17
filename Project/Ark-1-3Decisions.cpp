@@ -34,6 +34,7 @@ int firstDecision(int choice){
             }
             break;
     }
+    return 100;
 }
 
 int secondDecision(int choice){
@@ -96,6 +97,7 @@ int secondDecision(int choice){
             }
             break;         
     }
+    return 100;
 }
 
 int thirdDecision(int choice){
@@ -189,4 +191,5 @@ int thirdDecision(int choice){
             } 
             break;      
     }
+    return 100;
 }
