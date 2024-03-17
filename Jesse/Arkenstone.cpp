@@ -1,7 +1,11 @@
-#include <iostream>
 #include "ArkenstoneFunctions.h"
+#include "1-3Decisions.h"
+#include "fourthDecision.h"
+#include "fifthDecision.h"
+#include "sixthDecision.h"
 #include <limits>
 #include <string>
+#include <iostream>
 
 int main(){
     int firstChoice;
