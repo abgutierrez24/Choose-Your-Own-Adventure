@@ -1,6 +1,5 @@
 #include<iostream>
 #include "horror_ignore_route.cpp"
-#include "horror_story.cpp"
 using namespace std;
 
 void horror_storyline(){
