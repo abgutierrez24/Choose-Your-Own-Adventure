@@ -104,7 +104,9 @@ void negotiate_route2(){
             cout <<"the kingdom, triumphant and full with riches. You have succeeded! " << endl;
         break;
         case '2':
-            cout << "Realizing the formidable strength of the creatures, you choose to retreat. You and your platoon back away slowly, carefully avoiding confrontation. The mission to secure the dragon hoard has failed, and the kingdom's economic crisis remains unresolved.";
+            cout << "Realizing the formidable strength of the creatures, you choose to retreat. You and " << endl;
+            cout << "your platoon back away slowly, carefully avoiding confrontation. The mission to " << endl;
+            cout << "secure the dragon hoard has failed, and the kingdom's economic crisis remains unresolved." << endl;
         break;
         default:
             cout << "Invalid input. Please choose again" << endl;
@@ -121,10 +123,15 @@ void combat_guardsRoute(){
     cout << endl;
     switch (choice){
         case '1':
-        cout << "You choose to ascend the steep staircase, leading your platoon upward into the unknown. The climb is arduous, but your determination carries you forward. Eventually, you reach the top and find yourselves in a hidden chamber filled with untold riches. Success is yours for the taking." << endl;
+        cout << "You choose to ascend the steep staircase, leading your platoon upward into the unknown. " << endl;
+        cout << "The climb is arduous, but your determination carries you forward. Eventually, you reach " << endl;
+        cout << "the top and find yourselves in a hidden chamber filled with untold riches. Success is yours " << endl;
+        cout << "for the taking." << endl;
         break;
         case '2':
-        cout << " You go on the narrow bridge spanning the chasm below. However, disaster strikes as the bridge gives way beneath your feet, sending you and your platoon plummeting into the darkness below. Your mission ends in failure."  << endl;
+        cout << " You go on the narrow bridge spanning the chasm below. However, disaster strikes as the " << endl;
+        cout << "bridge gives way beneath your feet, sending you and your platoon plummeting into the darkness " << endl;
+        cout << "below. Your mission ends in failure." << endl;
         break;
         default:
         cout << "Invalid input. Please choose again" << endl;
@@ -141,11 +148,17 @@ char choice;
     cout << endl;
     switch(choice){
         case '1':
-        cout << "You go to explore the left corridor, hoping it will lead you to the dragon's lair. As you venture deeper into the darkness, the passage narrows, and you find yourself navigating through a labyrinth of twists and turns. Suddenly, you hear a rumbling noise from up ahead. You and your platoon spot a massive boulder blocking the path." << endl;
+        cout << "You go to explore the left corridor, hoping it will lead you to the dragon's lair. " << endl;
+        cout << "As you venture deeper into the darkness, the passage narrows, and you find yourself " << endl;
+        cout << "navigating through a labyrinth of twists and turns. Suddenly, you hear a rumbling " << endl;
+        cout << "noise from up ahead. You and your platoon spot a massive boulder blocking the path." << endl;
         boulder_route();
         break;
         case '2':
-        cout << "Curious about the faint glimmer of light, you choose to explore the right corridor. As you venture deeper into the cavern, the light grows brighter, illuminating your path. Suddenly, you come face to face with a massive dragon guarding its hoard. The beast roars in fury, its eyes gleaming with malice." << endl;
+        cout << "Curious about the faint glimmer of light, you choose to explore the right corridor. " << endl;
+        cout << "As you venture deeper into the cavern, the light grows brighter, illuminating your path. " << endl;
+        cout << "Suddenly, you come face to face with a massive dragon guarding its hoard. The beast roars " << endl;
+        cout << "in fury, its eyes gleaming with malice." << endl;
         encounter_dragonRoute();
         break;
         default:
@@ -163,10 +176,18 @@ void encounter_dragonRoute(){
     cout << endl;
     switch(choice){
         case '1': 
-        cout << "You step forward and try to reason with the dragon, explaining that you mean no harm and only seek to retrieve some of its treasure to help your kingdom. Surprisingly, the dragon listens to your plea and agrees to let you take a portion of its hoard. Grateful for the dragon's generosity, you gather as much treasure as you can carry before bidding the creature farewell and making your way back to the surface. " << endl;
+        cout << "You step forward and try to reason with the dragon, explaining that you mean no harm " << endl;
+        cout << "and only seek to retrieve some of its treasure to help your kingdom. Surprisingly, the " << endl;
+        cout << "dragon listens to your plea and agrees to let you take a portion of its hoard. Grateful " << endl;
+        cout << "for the dragon's generosity, you gather as much treasure as you can carry before bidding " << endl;
+        cout << "the creature farewell and making your way back to the surface. " << endl;
         break;
         case '2':
-        cout << "You draw your weapons and prepare to do battle with the dragon. The creature lunges at you with claws and teeth bared, and a fierce struggle ensues. Despite your best efforts, the dragon proves to be a formidable opponent. With wounds mounting and your platoon suffering casualties, you realize that victory is unlikely. In a last-ditch effort to save yourself and your remaining comrades, you retreat from the cavern, defeated." << endl;
+        cout << "You draw your weapons and prepare to do battle with the dragon. The creature lunges at " << endl;
+        cout << "you with claws and teeth bared, and a fierce struggle ensues. Despite your best efforts, " << endl;
+        cout << "the dragon proves to be a formidable opponent. With wounds mounting and your platoon " << endl;
+        cout << "suffering casualties, you realize that victory is unlikely. In a last-ditch effort to " << endl;
+        cout << "save yourself and your remaining comrades, you retreat from the cavern, defeated." << endl;
         break;
         default:
         cout << "Invalid input. Please choose again." << endl;
@@ -184,11 +205,18 @@ void boulder_route(){
     cout << endl;
     switch(choice){
         case '1':
-        cout << "You and your platoon muster all your strength and attempt to move the boulder blocking the path. You manage to move the massive rock, clearing the way forward.  However, another challenge seems to appear. Continuing down the corridor, you see a group of fierce looking monsters, blocking the path forward." << endl;
+        cout << "You and your platoon muster all your strength and attempt to move the boulder blocking " << endl;
+        cout << "the path. You manage to move the massive rock, clearing the way forward.  However, another " << endl;
+        cout << "challenge seems to appear. Continuing down the corridor, you see a group of fierce looking " << endl;
+        cout << "monsters, blocking the path forward." << endl;
         monsters_route();
         break;
         case '2':
-        cout << "Realizing that the boulder is too heavy to move, you decide to backtrack and search for an alternate route. After exploring several side passages, you eventually find a hidden tunnel that bypasses the obstruction. Following the tunnel, you emerge into the dragon's lair. You quickly fill your bags with as much treasure as they can hold before making your way back to the surface, victorious." << endl;
+        cout << "Realizing that the boulder is too heavy to move, you decide to backtrack and search for " << endl;
+        cout << "an alternate route. After exploring several side passages, you eventually find a hidden " << endl;
+        cout << "tunnel that bypasses the obstruction. Following the tunnel, you emerge into the dragon's lair. " << endl;
+        cout << "You quickly fill your bags with as much treasure as they can hold before making your way back " << endl;
+        cout << "to the surface, victorious." << endl;
         break;
         default:
         cout << "Invalid input. Please choose again." << endl;
@@ -204,10 +232,14 @@ void monsters_route(){
     cout << endl;
     switch(choice){
         case '1':
-        cout << "You and your platoon draw your weapons and prepare to face the monsters head-on. A fierce battle ensues, with swords clashing and spells flying. Unfortunately, you were defeated as a lot of men were tired from moving the boulder." << endl;
+        cout << "You and your platoon draw your weapons and prepare to face the monsters head-on. A fierce " << endl;
+        cout << "battle ensues, with swords clashing and spells flying. Unfortunately, you were defeated as a " << endl;
+        cout << "lot of men were tired from moving the boulder." << endl;
         break;
         case '2':
-        cout << "You signal to your platoon to remain silent as you carefully navigate around the monsters, using the shadows to conceal your movements. You and your platoon manage to bypass the monsters undetected, silently slipping past them and continuing down the corridor. As you move forward, you encounter a series of traps set to deter intruders." << endl;
+        cout << "You signal to your platoon to remain silent as you carefully navigate around the monsters, " << endl;
+        cout << "using the shadows to conceal your movements. You and your platoon manage to bypass the monsters "<< endl;cout << "undetected, silently slipping past them and continuing down the corridor. As you move forward, " << endl;
+        cout << "you encounter a series of traps set to deter intruders." << endl;
         traps_route();
         break;
         default:
@@ -224,11 +256,16 @@ void traps_route(){
     cout << endl;
     switch(choice){
         case '1':
-        cout << "Recognizing the danger posed by the traps, you and your platoon\n";
-        cout <<"carefully disarm them one by one. With patience and caution, you successfully neutralize the traps, clearing the way forward. Pressing onward, you finally reach the dragon's lair. Inside, you discover a vast hoard of treasure, gleaming in the dim light. Success! You gather as much treasure as you can carry and make your way back to the surface, triumphant." << endl;
+        cout << "Recognizing the danger posed by the traps, you and your platoon carefully disarm them " << endl;
+        cout << "one by one. With patience and caution, you successfully neutralize the traps, clearing " << endl;
+        cout << "the way forward. Pressing onward, you finally reach the dragon's lair. Inside, you discover " << endl;
+        cout << "a vast hoard of treasure, gleaming in the dim light. Success! You gather as much treasure as " << endl;
+        cout << "you can carry and make your way back to the surface, triumphant." << endl;
         break;
         case '2':
-        cout << "Instead of risking direct confrontation with the traps, you and your platoon find an alternate route to bypass them. You navigate through hidden passageways and secret tunnels, avoiding the traps altogether. However, soon you find yourselves hopelessly lost in the maze of passages. It results in you and your platoon failing the mission. " << endl;
+        cout << "Instead of risking direct confrontation with the traps, you and your platoon find an alternate " << endl;cout << "route to bypass them. You navigate through hidden passageways and secret tunnels, avoiding the " << endl;
+        cout << "traps altogether. However, soon you find yourselves hopelessly lost in the maze of passages. It " << endl;
+        cout << "results in you and your platoon failing the mission. " << endl;
         break;
         default:
         cout << "Invalid input. Please choose again." << endl;
