@@ -9,8 +9,9 @@ class Player{
             std::cin >> newName;
             this->name = newName;
         }
-        
-        
+        std::string getName(){
+            return name;
+        }
     private:
         std::string name;
 };
