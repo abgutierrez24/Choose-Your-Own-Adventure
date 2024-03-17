@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
-
 void ending8(){
   cout << "Your mouth goes dry as your mind races. You hear the eerie noises sound closer and grit your teeth. Deciding," << endl;
   cout << "you tell your friend to get ready to run back to the car. He realizes your plan and hesitates before nodding. He gets a" << endl;
