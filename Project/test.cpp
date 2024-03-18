@@ -11,6 +11,7 @@ call the test. Ensure to put \n before any text so that none of the tests overla
 #include "Ark6_test.cpp"
 #include "Ark-input-test.cpp"
 #include "starbar_test.cpp"
+#include "horror_test.cpp"
 
 int main(){
     test1();
@@ -21,4 +22,6 @@ int main(){
     test6();
     starTest();
     inputTest();
+    story_simulation();
+    return 0;
 }
