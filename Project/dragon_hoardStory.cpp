@@ -87,7 +87,7 @@ void negotiate_route1(){
         case '1':
         // If user chooses option 1, the story stops as it is the wrong answer.
         cout << "The guard shakes his head. 'Sorry, that's incorrect. You may not pass.' You and your " << endl;
-        cout << "platoon are forced to retreat from the cavern, empty-handed." << endl;
+        cout << "platoon are forced to retreat from the cavern, empty-handed. You failed." << endl;
         break;
         case '2':
         //The correct answer results in the continuation of the story.
@@ -109,6 +109,7 @@ void negotiate_route1(){
     }
     
 }
+
 /*
 This function is the continuing part of the story from 
 negotiate_route1 function. 

@@ -12,6 +12,7 @@ call the test. Ensure to put \n before any text so that none of the tests overla
 #include "Ark-input-test.cpp"
 #include "starbar_test.cpp"
 #include "horror_test.cpp"
+#include "dragon_hoardTest.cpp"
 
 int main(){
     test1();
@@ -23,5 +24,6 @@ int main(){
     starTest();
     inputTest();
     story_simulation();
+    dragon_hoardTest();
     return 0;
 }
