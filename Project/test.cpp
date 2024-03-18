@@ -5,11 +5,13 @@ call the test. Ensure to put \n before any text so that none of the tests overla
 
 #include "horror_test.cpp"
 #include "Ark1test.cpp"
+#include "dragon_hoardTest.cpp"
 
 int main(){
     starTest();
     inputTest();
     story_simulation();
+    dragon_hoardTest();
     Ark1();
     Ark2();
     Ark3();
