@@ -4,6 +4,7 @@
 #include "Ark-fifthDecision.h"
 #include "Ark-sixthDecision.h"
 #include <iostream>
+#include <sstream>
 #include <cassert>
 
 void inputTest(){
@@ -14,6 +15,24 @@ void inputTest(){
     int output1 = input();
     assert(output1 == 2);
     std::cout << "\n\n";
+}
+
+void starTest() {
+  std::cout << "Testing starbar()." << std::endl;
+  // Redirect standard output to a stringstream
+  std::stringstream buffer;
+  std::streambuf *old = std::cout.rdbuf(buffer.rdbuf());
+  starbar();
+
+  // Restore standard output
+  std::cout.rdbuf(old);
+
+  // Get the printed output from the buffer
+  std::string output = buffer.str();
+
+  // Compare the output with the expected value
+  std::string expected = "**********************************\n**********************************\n";
+  assert(output == expected);
 }
 
 void Ark1(){
@@ -63,6 +82,25 @@ void Ark5(){
     std::cout << "\nENTER 1 <------\n";
     int output2 = fifthDecision(14);
     assert(output2 == 3);
+}
+
+void Ark6() {
+  std::cout << "\n\nTesting OptionalSixth(int choice) with 5 as choice." << std::endl;
+  // Redirect standard output to a stringstream
+  std::stringstream buffer;
+  std::streambuf *old = std::cout.rdbuf(buffer.rdbuf());
+  OptionalSixth(5);
+
+  // Restore standard output
+  std::cout.rdbuf(old);
+
+  // Get the printed output from the buffer
+  std::string output = buffer.str();
+
+  // Compare the output with the expected value
+  std::string expected = "You are weak. You were knocked dead.\n**********************************\n" \
+    "**********************************\nThe kingdom was not saved. You Failed.\n";
+  assert(output == expected);
 }
 
 
