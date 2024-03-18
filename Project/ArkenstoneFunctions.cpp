@@ -23,7 +23,7 @@ int input() {
             std::cout << "Invalid input. Please enter either 1 or 2." << std::endl;
         }
         else {
-            break;
+            return userInput;
         }
     }
 }

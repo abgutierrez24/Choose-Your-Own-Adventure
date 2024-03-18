@@ -42,9 +42,9 @@ int secondDecision(int choice){
     switch (choice){
         case 1: // Be Honest
             std::cout << "After telling the fairies you intend to take the Arkenstone,\n"
-                << "The fairies tell you that their kingdom is to the East." << std::endl;
-            std::cout << "Do you believe the fairies and go east,\n"
-            << "or do you travel west?" << std::endl;
+                << "The fairies tell you that their kingdom is to the West." << std::endl;
+            std::cout << "Do you believe the fairies and go west,\n"
+            << "or do you travel east?" << std::endl;
             starbar();
             std::cout << "1. Travel West\n2. Travel East" << std::endl;
             newChoice = input();
