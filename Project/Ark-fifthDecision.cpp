@@ -183,4 +183,5 @@ int fifthDecision(int choice){
             return 0;
             break;
     }
+    return 100;
 }
