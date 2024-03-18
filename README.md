@@ -10,6 +10,12 @@ Some bugs and challenges that were encountered are:
 * Having difficulty merging branches in git
 * Integrating the use of classes
 
+## User Operation Instructions
+* Open and run main.cpp
+* Enter name when prompted
+* Game relies on inputting 1 or 2.
+* Some unit testing tequires user-input. Please tead instructions printed out for unit tests.
+
 <!-- Add information about your project.
 Such as detailed description, known bugs and user operation instructions.
 This is the file a user will first look at when attempting to run your program. -->
