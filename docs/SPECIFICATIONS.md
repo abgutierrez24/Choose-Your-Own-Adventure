@@ -16,11 +16,11 @@ Here are the things to include in this codument.
 
 **UML DIAGRAM:**
 
-![alt text](image.jpg)
+![uml diagram](https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/434056086_2949126228563737_4820298446284747420_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=dk6XoIR4CQMAX9l1YEw&_nc_ht=scontent-sea1-1.xx&oh=00_AfDsyfOZ_wCLrzbTL2oSLTGkSzxvpGAYZv6YWijV9pPk1g&oe=65FD76F0)
 
 **PROCEDURAL FLOW DIAGRAM:**
 
-![alt text](image.jpg)
+![procedural flow diagram](https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/433843919_2949125018563858_126709080590676400_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=UaB8TCmawx8AX9LCsvH&_nc_oc=AdhfOBEdN3Ouve4ol5Juzb17XFGBUc_CldVk-t9fF2OAwatDANC0MgNMc1VlJAOBQvs&_nc_ht=scontent-sea1-1.xx&oh=00_AfApSXgRDHnkk6ZVAln52W971SJPZwwxu6KL8QEcrbaICw&oe=65FE0B47)
 
 **ANTICIPATED CHALLENGES:**
 * Making the program accept different input types and ask the user to re-input their choice.
@@ -48,7 +48,7 @@ Here are the things to include in this codument.
 - Implemented the class for the game's code.
 - Got the code review for the project.
 
-**TIMELINE:**
+*TIMELINE:*
 
 ![timeline](https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/433298157_2949117935231233_5728746132836790055_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=f7-718uk5loAX9tqlcr&_nc_ht=scontent-sea1-1.xx&oh=00_AfBgIFDY3wJ1EJdvS8X1SqEZcI91JRMyber3XxAPUk5Aww&oe=65FDAA48)
 
