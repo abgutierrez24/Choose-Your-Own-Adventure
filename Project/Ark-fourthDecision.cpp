@@ -157,5 +157,7 @@ int fourthDecision(int choice){
             }
             break; 
     }
-    return 100;
+    return 100; // Despite this function not needing a default case due to the input() function's inability to return anything but 1 or 2, 
+                // the compiler gave temporary errors (despite still running the code) because this function didn't have a return outside
+                // of the switch cases
 }
