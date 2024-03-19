@@ -95,14 +95,15 @@ void ending1(){
 // fork functions include the two options users can choose from and calls the 
 // corresponding function that continues the story depending on which option was
 // chosen with a switch file
-void fork3B(){
+
+void fork3B(){ // outputs two options for story to fork from
   char choice;
   cout << "\tOption 1: You want to drive away." << endl;
   cout << "\tOption 2: You want to hide." <<endl;
   cout << "Which option do you choose (1/2)? ";
-  cin >> choice;
+  cin >> choice;// takes user's decision into choice variable
   cout << endl;
-  switch (choice){
+  switch (choice){ // switch statement that leads to different new story and calls next function
     case '1':
       ending3();
       break;
@@ -111,7 +112,7 @@ void fork3B(){
       break;
     default:
      cout << "Please choose again." << endl;
-     fork3B();
+     fork3B(); // default that makes function repeat if user input is not correct
 }
 }
 
@@ -224,12 +225,12 @@ void fork2A(){
 
 void fork1B(){
   char choice;
-  cout << "\tOption 1: You choose the spot near the lake." << endl;
+  cout << "\tOption 1: You choose the spot near the lake." << endl; 
   cout << "\tOption 2: You choose the spot in the plains." <<endl;
   cout << "Which option do you choose (1/2)? ";
-  cin >> choice;
+  cin >> choice; 
   cout << endl;
-  switch (choice){
+  switch (choice){ 
     case '1':
       cout << "He says okay and takes his things from you, telling you to follow him. It doesn't take long for the lake to appear as" << endl;
       cout << "the forest made way to a clearing near the lake shore. Content with the place, you and your friend set up camp in a" << endl;
@@ -251,7 +252,7 @@ void fork1B(){
       cout << "" << endl;
       fork2D();
       break;
-    default:
+    default: 
      cout << "Please choose again." << endl;
      fork1B();
 }
