@@ -1,5 +1,5 @@
 #pragma once
-
+// Prototypes for the dragon hoard story.
 void dragon_hoard_intro();
 void find_artifact();
 void fantasy_storyline();

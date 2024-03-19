@@ -2,7 +2,10 @@
 #include "dragon_hoardStory.cpp"
 #include "dragon_hoardStory.h"
 using namespace std;
-
+/*
+This function tests to see if the correct ouput is printed
+if they follow the choice order.
+*/
 void dragon_hoardTest(){
     cout << endl;
     cout << "----------------------DRAGON HOARD STORY LINE TEST----------------------" << endl;
