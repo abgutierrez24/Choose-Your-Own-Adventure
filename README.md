@@ -14,7 +14,7 @@ Some bugs and challenges that were encountered are:
 * Open and run main.cpp
 * Enter name when prompted
 * Game relies on inputting 1 or 2.
-* Some unit testing tequires user-input. Please tead instructions printed out for unit tests.
+* Some unit testing tequires user-input. Please read instructions printed out for unit tests.
 
 <!-- Add information about your project.
 Such as detailed description, known bugs and user operation instructions.
