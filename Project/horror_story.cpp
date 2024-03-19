@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// ending functions only output a block of text that concludes the story
 void ending8(){
   cout << "Your mouth goes dry as your mind races. You hear the eerie noises sound closer and grit your teeth. Deciding," << endl;
   cout << "you tell your friend to get ready to run back to the car. He realizes your plan and hesitates before nodding. He gets a" << endl;
@@ -92,6 +92,9 @@ void ending1(){
     cout << "the causes of death unclear." << endl;
 }
 
+// fork functions include the two options users can choose from and calls the 
+// corresponding function that continues the story depending on which option was
+// chosen with a switch file
 void fork3B(){
   char choice;
   cout << "\tOption 1: You want to drive away." << endl;

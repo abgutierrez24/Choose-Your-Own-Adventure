@@ -14,20 +14,23 @@ Here are the things to include in this codument.
     Split up the tasks and implementation into portions per group member.
   * __Timeline__ of individual and group delivery dates.
 
-## UML DIAGRAM:
+**UML DIAGRAM:**
+
 ![alt text](image.jpg)
 
-## PROCEDURAL FLOW DIAGRAM:
+**PROCEDURAL FLOW DIAGRAM:**
+
 ![alt text](image.jpg)
 
-## ANTICIPATED CHALLENGES:
+**ANTICIPATED CHALLENGES:**
 * Making the program accept different input types and ask the user to re-input their choice.
 * Calling on functions that have not yet been declared, causing an error when the program runs.
 * Accidentally losing all the files because of misunderstanding a git command
 * Having difficulty merging branches in git
 * Integrating the use of classes
 
-## PROJECT MANAGEMENT PLAN:
+**PROJECT MANAGEMENT PLAN:**
+
 *Abraham Gutierrez*
 - Wrote and coded stories for fantasy route.
 - Prepared procedural flow diagram.
@@ -45,5 +48,7 @@ Here are the things to include in this codument.
 - Implemented the class for the game's code.
 - Got the code review for the project.
 
-![alt text](timeline.jpg)
+**TIMELINE:**
+
+![timeline](https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/433298157_2949117935231233_5728746132836790055_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=f7-718uk5loAX9tqlcr&_nc_ht=scontent-sea1-1.xx&oh=00_AfBgIFDY3wJ1EJdvS8X1SqEZcI91JRMyber3XxAPUk5Aww&oe=65FDAA48)
 
