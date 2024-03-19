@@ -5,7 +5,7 @@ int firstDecision(int choice){
     int newChoice;
     switch (choice){
         case 1:
-            std::cout << "Your platoon journeys in the northeastern direction.\n"
+            std::cout << "Your platoon journeys in the northeastern direction. \n"
                 << "After a while, your platoon encounters a group of fairies."
                 << "They ask why you are here. What do you say?" << std::endl;
             starbar();

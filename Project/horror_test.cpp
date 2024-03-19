@@ -2,6 +2,8 @@
 #include "horror_story.cpp"
 using namespace std;
 
+// simulates game ending, providing tester with options needed 
+// to input in order to get the expected specific ending
     void story_simulation() {
     cout << "--------starting horror storyline test...--------" << endl;
     cout << "SIMULATION'S EXPECTED OUTPUT -  ending 1 & 4: " << endl;

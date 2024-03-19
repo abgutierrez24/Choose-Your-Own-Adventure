@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include "horror_story.cpp"
+
+// all prototypes for the functions used to make the horror story
 using namespace std;
 void ending8();
 void ending7();
