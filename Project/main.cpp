@@ -4,11 +4,11 @@
 
 int main(){
     int again;
-    Player newPlayer;
-    std::string name = newPlayer.getName();
+    Player newPlayer; // making new player object
+    std::string name = newPlayer.getName(); // getting player name from user
     do { // Allows the user to play the game as many times as they want
-    storyBegin(name);
+    storyBegin(name); // game begins
     std::cout << "Would you like to play again?\n Enter 1 if yes, enter 2 if no: " << std::endl;
-    again = input();
+    again = input(); 
     } while (again == 1);
 }
