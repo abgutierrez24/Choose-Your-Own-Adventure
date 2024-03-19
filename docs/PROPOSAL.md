@@ -5,6 +5,7 @@
 The goal for this project is to create a game that tells a story depending on the user's input.
 After an excerpt from the story is output for the user to read, it will provide two choices for the user to choose from.
 This leads to the story forking at each choice, creating different endings for the story.
+The team assumes that users who run the program will enter the correct inputs.
 
 ### Key Features
 
